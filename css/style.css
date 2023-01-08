@@ -103,22 +103,67 @@ header {
     max-width: 100%;
     position: fixed;
     top: 0;
-    display: flex;
-    background-color: white;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 0 20px;
-    overflow: hidden;
     z-index: 1;
 }
 
-header ul {
+.menu {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #D8E1DE;
+}
+
+.menu ul {
     padding-right: 40px;
 }
 
-header li {
+.menu li {
     margin: 0 15px;
+}
+
+.menu li:hover {
+    border-bottom: 2px solid #98AD39;
+    padding-bottom: 5px;
+    margin-bottom: -7px;
+}
+
+
+.dropdown {
+    position: relative;
+    display: block;  
+}
+
+.dropdownContent {
+    background-color: #98AD39;
+    color: #D8E1DE;
+    font-size: 20px;
+    max-width: 250px;
+    text-align: center;
+    display: block;
+    z-index: 2;
+    padding: 15px 5px;
+   }
+
+.dropdownContent li {
+    margin: 10px 0px;
+}
+
+#programsDropdown {
+    position: relative;
+    top: -45px;
+    left: 580px;
+}
+   
+#getInvolvedDropdown {
+    position: relative;
+    top: -45px;
+    left: 852px;
+}
+
+.hidden {
+    display: none;
 }
 
 /* Hero */

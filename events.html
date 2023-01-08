@@ -12,18 +12,34 @@
   </head>
   <body>
     <header>
-      <img src="images/Logo.png" alt="PEAS logo - PEAS written in white on a green pea">
-      <ul>
-        <li class="nav">Home</li>
-        <li class="nav">Programs</li>
-        <li class="nav">Events</li>
-        <li class="nav">Get Involved</li>
-        <li class="nav">About Us</li>
-        <li class="nav"><a href="donate.html">Donate</a></li>
-        <li class="nav">
-          <span class="material-symbols-outlined">search</span>
-        </li>
-      </ul>
+      <div class="menu">
+        <img src="images/Logo.png" alt="PEAS logo - PEAS written in white on a green pea">
+        <ul>
+          <li class="nav">Home</li>
+          <li class="nav" id="programs">Programs</li>
+          <li class="nav">Events</li>
+          <li class="nav" id="getInvolved">Get Involved</li>
+          <li class="nav">About Us</li>
+          <li class="nav"><a href="donate.html">Donate</a></li>
+          <li class="nav">
+           <span class="material-symbols-outlined">search</span>
+          </li>
+        </ul>
+      </div>
+      <div class="dropdown hidden" id="programsDropdown">
+        <ul class="dropdownContent">
+          <li>School Programs</li>
+          <li>Community Farm</li>
+          <li>Camps</li>
+        </ul>
+      </div>
+      <div class="dropdown hidden" id="getInvolvedDropdown">
+          <ul class="dropdownContent">
+            <li>Volunteer</li>
+            <li>Job Opportunities</li>
+            <li>Register</li>
+          </ul>
+      </div>
     </header>
 
     <main>
@@ -130,5 +146,7 @@
         </ul>
       </div>
     </footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <script src="js/index.js"></script>
   </body>
 </html>
